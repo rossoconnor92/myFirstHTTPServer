@@ -22,7 +22,7 @@ var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 //Why do we this? 
 //What does it do?
 
-var nomo = require('node-monkey').start({host:server_ip_address, port:"8000"} );
+var nomo = require('node-monkey').start({host:server_ip_address, port:'8000'} );
 
 //We need a function which handles requests and send response
 function handleRequest(request, response){
