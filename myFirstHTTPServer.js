@@ -26,7 +26,7 @@ var nomo = require('node-monkey').start({host:server_ip_address, port:"50500"} )
 
 //We need a function which handles requests and send response
 function handleRequest(request, response){
-    response.end('Yes! It Works!! Path Hit: ' + request.url);
+    response.end('Yes! It Works!! Path Hit: ' + server_ip_address + ":" + server_port + "/" + request.url);
     console.log("my server ip address is: " + server_ip_address);
 }
 //What is a request?
