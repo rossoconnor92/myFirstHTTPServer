@@ -13,7 +13,6 @@
 var http = require('http');
 //Why do we this? 
 //What does it do?
-require('node-monkey').start();
 
 //Lets define a port we want to listen to
 var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
@@ -22,6 +21,8 @@ var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 //Why port 80?
 //Why do we this? 
 //What does it do?
+
+var nomo = require('node-monkey').start({host:server_ip_address, port:"50500"} );
 
 //We need a function which handles requests and send response
 function handleRequest(request, response){
