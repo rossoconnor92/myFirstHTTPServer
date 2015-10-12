@@ -26,6 +26,9 @@ var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 function handleRequest(request, response){
     response.end('Yes! It Works!! Path Hit: ' + request.url);
 }
+function handleRequest1(request, response){
+    response.end('Hello there!! Path Hit: ' + request.url);
+}
 //What is a request?
 //What is a response?
 //What is an object?
@@ -36,6 +39,7 @@ function handleRequest(request, response){
 
 //Create a server
 var server = http.createServer(handleRequest);
+var server = http.createServer(handleRequest1);
 //What is a server object?
 //Why do we this? 
 //What does it do?
