@@ -13,6 +13,7 @@
 var http = require('http');
 //Why do we this? 
 //What does it do?
+require('node-monkey').start();
 
 //Lets define a port we want to listen to
 var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
