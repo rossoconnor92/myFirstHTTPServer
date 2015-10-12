@@ -3,7 +3,7 @@
   "version" : "0.0.1",
   "dependencies": {
     "http-server": "*",
-    "node-monkey": "*"
+    "console-remote-client": "*"
   },
   "main": "myFirstHTTPServer.js"
 }
