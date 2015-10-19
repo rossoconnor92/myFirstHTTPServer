@@ -5,5 +5,5 @@
     "http-server": "*",
     "console-remote-client": "*"
   },
-  "main": "myFirstHTTPServer.js"
+  "main": "first-server.js"
 }
