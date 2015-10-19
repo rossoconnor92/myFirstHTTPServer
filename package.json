@@ -4,5 +4,5 @@
   "dependencies": {
     "http-server": "*"
   },
-  "main": "first-server.js"
+  "main": "myFirstHTTPServer.js"
 }
